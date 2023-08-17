@@ -1,0 +1,251 @@
+[
+  {
+    "id": "3429900230",
+    "products": [
+      {
+        "product": {
+          "id": "1",
+          "name": "Lenovo Legion Duel Dual-Sim 256GB ROM + 12GB RAM",
+          "price": 620.00,
+          "image": "lenovolegion"
+        },
+        "quantity": 1
+      }
+    ],
+    "user": {
+      "firstName": "Andri",
+      "lastName": "Boston",
+      "email": "andriboston@gmail.com",
+      "address": "Failed street 1344, 10004, NY"
+    },
+    "paymentDetails": {
+      "packagingFee": 2.0,
+      "subtotal": 620.0,
+      "deliveryFee": 5.3,
+      "discount": 0.0,
+      "total": 627.3
+    },
+    "state": "DONE"
+  },
+  {
+    "id": "3429900231",
+    "products": [
+      {
+        "product": {
+          "id": "123",
+          "name": "Samsung Galaxy S21 Ultra 5G 128GB",
+          "price": 860.00,
+          "discountPrice": 820.00,
+          "discountValue": "-15%",
+          "image": "samsunggalaxys21"
+        },
+        "quantity": 3
+      }
+    ],
+    "user": {
+      "firstName": "John",
+      "lastName": "Dow",
+      "email": "johndow@gmail.com",
+      "address": "Reserved street 1344, 10004, NY"
+    },
+    "paymentDetails": {
+      "packagingFee": 2.0,
+      "subtotal": 1203.89,
+      "deliveryFee": 5.3,
+      "discount": 23.0,
+      "total": 1200.89
+    },
+    "state": "DONE"
+  },
+  {
+    "id": "3429900232",
+    "products": [
+      {
+        "product": {
+          "id": "124",
+          "name": "Xiaomi POCO X4 PRO 5G",
+          "price": 920.00,
+          "image": "xiaomipocox4pro"
+        },
+        "quantity": 5
+      },
+      {
+        "product": {
+          "id": "225",
+          "name": "Xiaomi POCO X4 PRO Dual-SIM 256GB ROM",
+          "price": 1020.00,
+          "image": "xiaomipocox4produal256gb"
+        },
+        "quantity": 1
+      }
+    ],
+    "user": {
+      "firstName": "Andri",
+      "lastName": "Boston",
+      "email": "andriboston@gmail.com",
+      "address": "Failed street 1344, 10004, NY"
+    },
+    "paymentDetails": {
+      "packagingFee": 3.0,
+      "subtotal": 122.99,
+      "deliveryFee": 8.3,
+      "discount": 29.0,
+      "total": 199.89
+    },
+    "state": "DONE"
+  },
+  {
+    "id": "3429900233",
+    "products": [
+      {
+        "product": {
+          "id": "g173",
+          "name": "Google Pixel 6a Dual-SIM",
+          "price": 1720.00,
+          "image": "googlepixel6a"
+        },
+        "quantity": 1
+      },
+      {
+        "product": {
+          "id": "sgs888",
+          "name": "Samsung Galaxy S20 Ultra 5G 128GB",
+          "price": 760.00,
+          "discountPrice": 699.99,
+          "discountValue": "-10%",
+          "image": "samsunggalaxys20"
+        },
+        "quantity": 2
+      }
+    ],
+    "user": {
+      "firstName": "Anjey",
+      "lastName": "Polkovski",
+      "email": "anjeypolkovski@gmail.com",
+      "address": "Poland street 1344, 10004, NY"
+    },
+    "paymentDetails": {
+      "packagingFee": 12.0,
+      "subtotal": 1123.89,
+      "deliveryFee": 15.3,
+      "discount": 123.0,
+      "total": 1100.89
+    },
+    "state": "DONE"
+  },
+  {
+    "id": "3429900234",
+    "products": [
+      {
+        "product": {
+          "id": "a175",
+          "name": "Asus ROG 6",
+          "price": 926.00,
+          "image": "asusrog6"
+        },
+        "quantity": 4
+      }
+    ],
+    "user": {
+      "firstName": "Andri",
+      "lastName": "Boston",
+      "email": "andriboston@gmail.com",
+      "address": "Failed street 1344, 10004, NY"
+    },
+    "paymentDetails": {
+      "packagingFee": 2.0,
+      "subtotal": 123.89,
+      "deliveryFee": 5.3,
+      "discount": 23.0,
+      "total": 926.00
+    },
+    "state": "DONE"
+  },
+  {
+    "id": "3429900235",
+    "products": [
+      {
+        "product": {
+          "id": "xm123",
+          "name": "Xiaomi Redmi Note 11",
+          "price": 999.99,
+          "image": "xiaomiredminote11"
+        },
+        "quantity": 3
+      }
+    ],
+    "user": {
+      "firstName": "Lydia",
+      "lastName": "Philips",
+      "email": "testuser@mobitru.com",
+      "address": "Mission street 1298, 10004, NY"
+    },
+    "paymentDetails": {
+      "packagingFee": 2.0,
+      "subtotal": 123.89,
+      "deliveryFee": 5.3,
+      "discount": 23.0,
+      "total": 999.89
+    },
+    "state": "DONE"
+  },
+  {
+    "id": "3429900236",
+    "products": [
+      {
+        "product": {
+          "id": "1",
+          "name": "Lenovo Legion Duel Dual-Sim 256GB ROM + 12GB RAM",
+          "price": 620.00,
+          "image": "lenovolegion"
+        },
+        "quantity": 2
+      },
+      {
+        "product": {
+          "id": "2",
+          "name": "Samsung Galaxy S10+ Plus 128GB",
+          "price": 860.00,
+          "discountPrice": 720.00,
+          "discountValue": "-15%",
+          "image": "samsunggalaxys10plus128"
+        },
+        "quantity": 3
+      },
+      {
+        "product": {
+          "id": "123",
+          "name": "Samsung Galaxy S21 Ultra 5G 128GB",
+          "price": 860.00,
+          "discountPrice": 820.00,
+          "discountValue": "-15%",
+          "image": "samsunggalaxys21"
+        },
+        "quantity": 4
+      },
+      {
+        "product": {
+          "id": "124",
+          "name": "Xiaomi POCO X4 PRO 5G",
+          "price": 920.00,
+          "image": "xiaomipocox4pro"
+        },
+        "quantity": 5
+      }
+    ],
+    "user": {
+      "firstName": "Andri",
+      "lastName": "Boston",
+      "email": "andriboston@gmail.com",
+      "address": "Failed street 1344, 10004, NY"
+    },
+    "paymentDetails": {
+      "packagingFee": 2.0,
+      "subtotal": 5600.89,
+      "deliveryFee": 5.3,
+      "discount": 230.0,
+      "total": 4567.89
+    },
+    "state": "DONE"
+  }
+]

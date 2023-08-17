@@ -1,0 +1,80 @@
+[
+  {
+    "id": "1",
+    "name":"Lenovo Legion Duel Dual-Sim 256GB ROM + 12GB RAM",
+    "price": 620.00,
+    "image": "lenovolegion"
+  },
+  {
+    "id": "2",
+    "name":"Samsung Galaxy S10+ Plus 128GB",
+    "price": 860.00,
+    "discountPrice": 720.00,
+    "discountValue": "-15%",
+    "image": "samsunggalaxys10plus128"
+  },
+  {
+    "id": "123",
+    "name":"Samsung Galaxy S21 Ultra 5G 128GB",
+    "price": 860.00,
+    "discountPrice": 820.00,
+    "discountValue": "-15%",
+    "image": "samsunggalaxys21"
+  },
+  {
+    "id": "124",
+    "name":"Xiaomi POCO X4 PRO 5G",
+    "price": 920.00,
+    "image": "xiaomipocox4pro"
+  },
+  {
+    "id": "225",
+    "name":"Xiaomi POCO X4 PRO Dual-SIM 256GB ROM",
+    "price": 1020.00,
+    "image": "xiaomipocox4produal256gb"
+  },
+  {
+    "id": "g173",
+    "name":"Google Pixel 6a Dual-SIM",
+    "price": 1720.00,
+    "image": "googlepixel6a"
+  },
+  {
+    "id": "a174",
+    "name":"Asus ROG",
+    "price": 920.00,
+    "image": "asusrog"
+  },
+  {
+    "id": "a175",
+    "name":"Asus ROG 6",
+    "price": 926.00,
+    "image": "asusrog6"
+  },
+  {
+    "id": "g789",
+    "name":"Google Pixel 6a 64GB",
+    "price": 1420.00,
+    "image": "googlepixel64"
+  },
+  {
+    "id": "g791",
+    "name":"Google Pixel 6 128GB",
+    "price": 1620.00,
+    "image": "googlepixel128"
+  },
+  {
+    "id": "sgs888",
+    "name":"Samsung Galaxy S20 Ultra 5G 128GB",
+    "price": 760.00,
+    "discountPrice": 699.99,
+    "discountValue": "-10%",
+    "image": "samsunggalaxys20"
+  },
+  {
+    "id": "xm123",
+    "name":"Xiaomi Redmi Note 11",
+    "price": 999.99,
+    "image": "xiaomiredminote11"
+  }
+]

@@ -1,0 +1,1 @@
+typedef IsValueChanged<T> = bool Function(T value);
