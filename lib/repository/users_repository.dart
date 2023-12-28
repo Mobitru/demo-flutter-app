@@ -11,6 +11,8 @@ class UsersRepository {
   final User _userBio;
   final String _password;
   User? currentUser;
+  String get correctUserEmail => _userEmail.email;
+  String get correctUserPassword => _password;
 
 
   UsersRepository(this._userEmail, this._userBio, this._password);

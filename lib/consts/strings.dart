@@ -18,6 +18,7 @@ const aboutButtonTitle = 'About the app';
 const aboutPageTitle = 'About the app';
 const loginTextFieldTitle = 'Login';
 const loginButtonTitle = 'Sign In';
+const typeCredsAndLoginButtonTitle = 'Sign in with correct user';
 const logoutButtonTitle = 'Logout';
 const applyButtonTitle = 'Apply';
 const saveButtonTitle = 'Save';

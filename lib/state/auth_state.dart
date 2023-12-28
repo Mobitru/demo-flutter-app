@@ -17,6 +17,10 @@ class AuthState with ChangeNotifier {
   bool authenticated = false;
   bool error = false;
 
+  void authWithCorrectUser() {
+    checkAuth(email: _usersRepository.correctUserEmail, password: _usersRepository.correctUserPassword);
+  }
+
   void checkAuth({required String email, required String password}) {
     if (_usersRepository.checkCredentials(email, password)) {
       _updateAuth(auth: true, err: false);

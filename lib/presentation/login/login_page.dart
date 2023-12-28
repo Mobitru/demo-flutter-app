@@ -76,6 +76,29 @@ class LoginState extends State<LoginPage> {
                 const SizedBox(
                   height: primaryPadding,
                 ),
+                OutlinedButton(
+                  style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
+                      backgroundColor: primaryColor,
+                      minimumSize: const Size(double.infinity, primaryPadding * 3)),
+                  onPressed: () {
+                      setState(() {
+                        loginTextController.clear();                        
+                        passwordTextController.clear();                                                                         
+                      });                
+                      context.read<AuthState>().authWithCorrectUser();
+                  },
+                  child: const Text(
+                    typeCredsAndLoginButtonTitle,
+                    style:
+                        TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w600),
+                  ),
+                ),
+                const SizedBox(
+                  height: primaryPadding * 2,
+                ),
                 if (widget.showBiometric)
                   OutlinedButton(
                     style: ElevatedButton.styleFrom(
