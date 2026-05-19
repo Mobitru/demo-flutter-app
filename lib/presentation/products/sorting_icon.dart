@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_demo_app/consts/colors.dart';
 import 'package:flutter_demo_app/consts/maps.dart';
 import 'package:flutter_demo_app/l10n/app_localizations.dart';
-import 'package:flutter_demo_app/state/products_state.dart';
 
 class SortingIcon extends StatelessWidget {
   const SortingIcon({
@@ -10,7 +9,7 @@ class SortingIcon extends StatelessWidget {
     required this.sorting,
   });
 
-  final Sorting sorting;
+  final SortingType sorting;
 
   @override
   Widget build(BuildContext context) {

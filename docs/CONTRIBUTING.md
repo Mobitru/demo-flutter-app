@@ -36,6 +36,7 @@ Here is an example:
 > More details can be found [here](https://docs.flutter.dev/deployment/ios#review-xcode-project-settings)
 
 - go to the project root directory in CLI.
+- generate localization files using the `flutter gen-l10n` command
 - perform `flutter build apk --debug` in case of Android or `flutter build ipa --release` for iOS.
 - wait for all dependencies will be downloaded and assembling will be finished.
 

@@ -6,11 +6,10 @@ import 'package:flutter_demo_app/consts/sizes.dart';
 import 'package:flutter_demo_app/l10n/app_localizations.dart';
 import 'package:flutter_demo_app/presentation/common/app_bar.dart';
 import 'package:flutter_demo_app/presentation/common/button_widget.dart';
-import 'package:flutter_demo_app/state/products_state.dart';
 
 class SortingWidget extends StatefulWidget {
-  final Sorting sorting;
-  final ValueChanged<Sorting> update;
+  final SortingType sorting;
+  final ValueChanged<SortingType> update;
 
   const SortingWidget({
     required this.sorting,
@@ -23,7 +22,7 @@ class SortingWidget extends StatefulWidget {
 }
 
 class SortingState extends State<SortingWidget> {
-  late Sorting _sorting;
+  late SortingType _sorting;
 
   @override
   void initState() {
@@ -50,17 +49,17 @@ class SortingState extends State<SortingWidget> {
                         physics: const NeverScrollableScrollPhysics(),
                         children: ListTile.divideTiles(
                           context: context,
-                          tiles: sortingMap.keys.map(
+                          tiles: SortingType.values.map(
                             (key) => InkWell(
                               onTap: () => setState(() {
                                 _sorting = key;
                               }),
                               child: Semantics(
                                 excludeSemantics: true,
-                                label: '$accessibilitySortingOption ${sortingMap[key]!}',
+                                label: '$accessibilitySortingOption ${key.localizedName(context)}',
                                 child: ListTile(
                                   title: Text(
-                                    sortingMap[key]!,
+                                    key.localizedName(context),
                                     style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                                           height: 1.2,
                                           fontWeight: FontWeight.w300,

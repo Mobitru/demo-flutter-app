@@ -242,5 +242,21 @@
   "fieldEmptyError": "字段不能为空",
   "@fieldEmptyError": {
     "description": "Error message for empty field"
+  },
+  "sortPriceAscending": "价格升序排序",
+  "@sortPriceAscending": {
+    "description": "Sort price ascending label"
+  },
+  "sortPriceDescending": "价格降序排列",
+  "@sortPriceDescending": {
+    "description": "Sort price descending label"
+  },
+  "sortNameAZ": "名称升序排列",
+  "@sortNameAZ": {
+    "description": "Sort produce name ascending label"
+  },
+  "sortNameZA": "名称降序排序",
+  "@sortNameZA": {
+    "description": "Sort produce name descending label"
   }
 }

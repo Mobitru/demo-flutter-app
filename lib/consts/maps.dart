@@ -1,14 +1,29 @@
-import 'package:flutter_demo_app/state/products_state.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_demo_app/l10n/app_localizations.dart';
 
-const sortingMap = {
-  Sorting.ascendingPrice: 'Price ascending',
-  Sorting.descendingPrice: 'Price descending',
-  Sorting.ascendingAZ: 'Product name A-Z',
-  Sorting.descendingAZ: 'Product name Z-A',
-};
+enum SortingType {
+  ascendingPrice,
+  descendingPrice,
+  ascendingAZ,
+  descendingAZ,
+}
 
-extension SortExt on Sorting {
-  bool get isAsc => this == Sorting.ascendingPrice || this == Sorting.ascendingAZ;
+extension SortExt on SortingType {
+  bool get isAsc => this == SortingType.ascendingPrice || this == SortingType.ascendingAZ;
 
-  bool get isPrice => this == Sorting.ascendingPrice || this == Sorting.descendingPrice;
+  bool get isPrice => this == SortingType.ascendingPrice || this == SortingType.descendingPrice;
+
+  String localizedName(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    switch (this) {
+      case SortingType.ascendingPrice:
+        return l10n.sortPriceAscending;
+      case SortingType.descendingPrice:
+        return l10n.sortPriceDescending;
+      case SortingType.ascendingAZ:
+        return l10n.sortNameAZ;
+      case SortingType.descendingAZ:
+        return l10n.sortNameZA;
+    }
+  }
 }

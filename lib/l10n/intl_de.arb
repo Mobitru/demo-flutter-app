@@ -242,5 +242,21 @@
   "fieldEmptyError": "Feld darf nicht leer sein",
   "@fieldEmptyError": {
     "description": "Error message for empty field"
+  },
+  "sortPriceAscending": "Preis steigend",
+  "@sortPriceAscending": {
+    "description": "Sort price ascending label"
+  },
+  "sortPriceDescending": "Preis fallend",
+  "@sortPriceDescending": {
+    "description": "Sort price descending label"
+  },
+  "sortNameAZ": "Produktname A-Z",
+  "@sortNameAZ": {
+    "description": "Sort produce name ascending label"
+  },
+  "sortNameZA": "Produktname Z-A",
+  "@sortNameZA": {
+    "description": "Sort produce name descending label"
   }
 }
