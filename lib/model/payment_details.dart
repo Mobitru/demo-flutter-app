@@ -5,7 +5,7 @@ part 'payment_details.freezed.dart';
 part 'payment_details.g.dart';
 
 @freezed
-class PaymentDetails with _$PaymentDetails {
+abstract class PaymentDetails with _$PaymentDetails {
   const factory PaymentDetails({
     required final double packagingFee,
     required final double subtotal,

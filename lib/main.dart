@@ -7,6 +7,8 @@ import 'package:flutter_demo_app/state/orders_state.dart';
 import 'package:flutter_demo_app/state/products_state.dart';
 import 'package:get_it/get_it.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'l10n/app_localizations.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -40,6 +42,17 @@ class MyApp extends StatelessWidget {
             titleMedium: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
           ),
         ),
+        localizationsDelegates: const [
+          AppLocalizations.delegate,
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+          GlobalCupertinoLocalizations.delegate,
+        ],
+        supportedLocales: const [
+          Locale('en', ''),
+          Locale('de', ''),
+          Locale('zh', ''),
+        ],
       ),
     );
   }

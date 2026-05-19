@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo_app/consts/sizes.dart';
-import 'package:flutter_demo_app/consts/strings.dart';
+import 'package:flutter_demo_app/l10n/app_localizations.dart';
 import 'package:flutter_demo_app/model/order.dart';
 import 'package:flutter_demo_app/presentation/common/grey_line.dart';
 import 'package:flutter_demo_app/presentation/order_details/order_details_page.dart';
@@ -31,7 +31,7 @@ class OrdersPage extends StatelessWidget {
               ),
             ),
           GreyLineWidget(
-            text: '$completedLabel (${orders.length})',
+            text: '${AppLocalizations.of(context)!.completedLabel} (${orders.length})',
           ),
           ...orders
               .map((order) => Padding(

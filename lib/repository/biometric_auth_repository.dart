@@ -1,4 +1,5 @@
-import 'package:flutter_demo_app/consts/strings.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_demo_app/l10n/app_localizations.dart';
 import 'package:injectable/injectable.dart';
 import 'package:local_auth/local_auth.dart';
 
@@ -9,10 +10,11 @@ class BioAuthRepository {
 
   BioAuthRepository(this._auth, this.isSupported);
 
-  Future<bool> authenticate() async {
+  Future<bool> authenticate(BuildContext context) async {
     return await _auth.authenticate(
-        localizedReason: loginBiometricTip,
-        options: const AuthenticationOptions(biometricOnly: true));
+        localizedReason: AppLocalizations.of(context)!.loginBiometricTip,
+        biometricOnly: true
+      );
   }
 
   @FactoryMethod(preResolve: true)

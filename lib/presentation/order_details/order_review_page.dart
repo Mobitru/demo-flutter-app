@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo_app/consts/strings.dart';
+import 'package:flutter_demo_app/l10n/app_localizations.dart';
 import 'package:flutter_demo_app/presentation/account/edit_account_widget.dart';
 import 'package:flutter_demo_app/presentation/common/app_bar.dart';
 import 'package:flutter_demo_app/presentation/order_details/order_details_widget.dart';
@@ -28,10 +28,10 @@ class OrderReviewPageState extends State<OrderReviewPage> {
           appBar: getAppBar(
               context,
               isSuccess
-                  ? orderCompletedLabel
+                  ? AppLocalizations.of(context)!.orderCompletedLabel
                   : authState.currentUser!.address.isNotEmpty
-                      ? reviewOrderLabel
-                      : provideAddressLabel),
+                      ? AppLocalizations.of(context)!.reviewOrderLabel
+                      : AppLocalizations.of(context)!.provideAddressLabel),
           backgroundColor: Colors.white,
           body: isSuccess
               ? const SuccessOrderWidget()

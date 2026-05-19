@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_demo_app/consts/accessibility.dart';
 import 'package:flutter_demo_app/consts/colors.dart';
 import 'package:flutter_demo_app/consts/sizes.dart';
-import 'package:flutter_demo_app/consts/strings.dart';
+import 'package:flutter_demo_app/l10n/app_localizations.dart';
 
 class ProductCartWidget extends StatelessWidget {
   final int amount;
@@ -28,7 +28,7 @@ class ProductCartWidget extends StatelessWidget {
               label: '$amount $accessibilityCartButton',
               excludeSemantics: true,
               child: Text(
-                '$cartLabel($amount)',
+                '${AppLocalizations.of(context)!.cartLabel}($amount)',
                 style: Theme.of(context)
                     .textTheme
                     .titleMedium

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo_app/consts/colors.dart';
 import 'package:flutter_demo_app/consts/sizes.dart';
-import 'package:flutter_demo_app/consts/strings.dart';
+import 'package:flutter_demo_app/l10n/app_localizations.dart';
 import 'package:flutter_demo_app/model/order.dart';
 import 'package:flutter_demo_app/presentation/account/user_widget.dart';
 import 'package:flutter_demo_app/presentation/common/button_widget.dart';
@@ -35,8 +35,8 @@ class OrdersDetailsWidget extends StatelessWidget {
               ),
             ),
           ),
-          const GreyLineWidget(
-            text: contactDetailsLabel,
+          GreyLineWidget(
+            text: AppLocalizations.of(context)!.contactDetailsLabel,
           ),
           DefaultPaddingWidget(
             child: UserWidget(
@@ -45,8 +45,8 @@ class OrdersDetailsWidget extends StatelessWidget {
               usualSize: 14,
             ),
           ),
-          const GreyLineWidget(
-            text: paymentDetailsLabel,
+          GreyLineWidget(
+            text: AppLocalizations.of(context)!.paymentDetailsLabel,
           ),
           Padding(
             padding:
@@ -58,7 +58,7 @@ class OrdersDetailsWidget extends StatelessWidget {
                 padding: const EdgeInsets.all(primaryPadding),
                 size: const Size(double.infinity, primaryPadding * 3),
                 callback: () => success!(order),
-                title: confirmOrderLabel,
+                title: AppLocalizations.of(context)!.confirmOrderLabel,
                 color: primaryColor,
                 style: Theme.of(context).textTheme.bodyLarge?.copyWith(color: Colors.white))
         ],

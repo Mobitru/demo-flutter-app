@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo_app/consts/sizes.dart';
+import 'package:flutter_demo_app/l10n/app_localizations.dart';
 
 class InputWidget extends StatelessWidget {
   final String title;
@@ -37,7 +38,7 @@ class InputWidget extends StatelessWidget {
               obscureText: obscureText,
               decoration: InputDecoration(
                 contentPadding: const EdgeInsets.only(left: 8.0, bottom: 2.0),
-                errorText: error ? 'Field can\'t be empty' : null,
+                errorText: error ? AppLocalizations.of(context)!.fieldEmptyError : null,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
                 ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo_app/consts/strings.dart';
+import 'package:flutter_demo_app/l10n/app_localizations.dart';
 import 'package:flutter_demo_app/model/order.dart';
 import 'package:flutter_demo_app/presentation/common/app_bar.dart';
 import 'package:flutter_demo_app/presentation/order_details/order_details_widget.dart';
@@ -13,7 +13,7 @@ class OrderDetailsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: getAppBar(context, '$orderLabel${order.id}'),
+        appBar: getAppBar(context, '${AppLocalizations.of(context)!.orderLabel}${order.id}'),
         backgroundColor: Colors.white,
         body: OrdersDetailsWidget(
           order: order,

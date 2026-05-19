@@ -3,7 +3,7 @@ import 'package:flutter_demo_app/consts/accessibility.dart';
 import 'package:flutter_demo_app/consts/colors.dart';
 import 'package:flutter_demo_app/consts/maps.dart';
 import 'package:flutter_demo_app/consts/sizes.dart';
-import 'package:flutter_demo_app/consts/strings.dart';
+import 'package:flutter_demo_app/l10n/app_localizations.dart';
 import 'package:flutter_demo_app/presentation/common/app_bar.dart';
 import 'package:flutter_demo_app/presentation/common/button_widget.dart';
 import 'package:flutter_demo_app/state/products_state.dart';
@@ -37,7 +37,7 @@ class SortingState extends State<SortingWidget> {
       builder: (_, orientation) => SafeArea(
         child: SafeArea(
           child: Scaffold(
-            appBar: getAppBar(context, sortingLabel),
+            appBar: getAppBar(context, AppLocalizations.of(context)!.sortingLabel),
             body: Padding(
               padding: const EdgeInsets.symmetric(
                 horizontal: primaryPadding,
@@ -91,7 +91,7 @@ class SortingState extends State<SortingWidget> {
                             ?.copyWith(height: 1.5, color: Colors.white),
                         size: const Size(double.infinity, primaryPadding * 3),
                         callback: () => widget.update(_sorting),
-                        title: applyButtonTitle,
+                        title: AppLocalizations.of(context)!.applyButtonTitle,
                       ),
                     ),
                   )

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo_app/consts/colors.dart';
 import 'package:flutter_demo_app/consts/sizes.dart';
-import 'package:flutter_demo_app/consts/strings.dart';
+import 'package:flutter_demo_app/l10n/app_localizations.dart';
 import 'package:flutter_demo_app/presentation/common/button_widget.dart';
 
 class EmptyCartWidget extends StatelessWidget {
@@ -23,16 +23,16 @@ class EmptyCartWidget extends StatelessWidget {
             color: Colors.grey,
           ),
           Text(
-            cartIsEmptyLabel,
+            AppLocalizations.of(context)!.cartIsEmptyLabel,
             style:
                 Theme.of(context).textTheme.titleMedium?.copyWith(color: Colors.grey, height: 1.5),
           ),
-          const Text(
-            cartIsEmptyLabelDetails1,
+          Text(
+            AppLocalizations.of(context)!.cartIsEmptyLabelDetails1,
             style: detailsStyle,
           ),
-          const Text(
-            cartIsEmptyLabelDetails2,
+          Text(
+            AppLocalizations.of(context)!.cartIsEmptyLabelDetails2,
             style: detailsStyle,
           ),
           const SizedBox(
@@ -41,7 +41,7 @@ class EmptyCartWidget extends StatelessWidget {
           ButtonWidget(
             size: const Size(150, primaryPadding * 3),
             callback: () => Navigator.of(context).pop(),
-            title: viewProductsButtonTitle,
+            title: AppLocalizations.of(context)!.viewProductsButtonTitle,
             color: primaryColor,
             style:
                 Theme.of(context).textTheme.titleMedium?.copyWith(color: Colors.white, height: 1.5),
