@@ -82,17 +82,6 @@ as String?,
 
 /// Adds pattern-matching-related methods to [Product].
 extension ProductPatterns on Product {
-/// A variant of `map` that fallback to returning `orElse`.
-///
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case final Subclass value:
-///     return ...;
-///   case _:
-///     return orElse();
-/// }
-/// ```
 
 @optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _Product value)?  $default,{required TResult orElse(),}){
 final _that = this;
@@ -103,18 +92,6 @@ return $default(_that);case _:
 
 }
 }
-/// A `switch`-like method, using callbacks.
-///
-/// Callbacks receives the raw object, upcasted.
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case final Subclass value:
-///     return ...;
-///   case final Subclass2 value:
-///     return ...;
-/// }
-/// ```
 
 @optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _Product value)  $default,){
 final _that = this;
@@ -125,17 +102,6 @@ return $default(_that);case _:
 
 }
 }
-/// A variant of `map` that fallback to returning `null`.
-///
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case final Subclass value:
-///     return ...;
-///   case _:
-///     return null;
-/// }
-/// ```
 
 @optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _Product value)?  $default,){
 final _that = this;
@@ -146,17 +112,6 @@ return $default(_that);case _:
 
 }
 }
-/// A variant of `when` that fallback to an `orElse` callback.
-///
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case Subclass(:final field):
-///     return ...;
-///   case _:
-///     return orElse();
-/// }
-/// ```
 
 @optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String id,  String image,  String name,  double price,  double? discountPrice,  String? discountValue)?  $default,{required TResult orElse(),}) {final _that = this;
 switch (_that) {
@@ -166,18 +121,6 @@ return $default(_that.id,_that.image,_that.name,_that.price,_that.discountPrice,
 
 }
 }
-/// A `switch`-like method, using callbacks.
-///
-/// As opposed to `map`, this offers destructuring.
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case Subclass(:final field):
-///     return ...;
-///   case Subclass2(:final field2):
-///     return ...;
-/// }
-/// ```
 
 @optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String id,  String image,  String name,  double price,  double? discountPrice,  String? discountValue)  $default,) {final _that = this;
 switch (_that) {
@@ -187,17 +130,6 @@ return $default(_that.id,_that.image,_that.name,_that.price,_that.discountPrice,
 
 }
 }
-/// A variant of `when` that fallback to returning `null`
-///
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case Subclass(:final field):
-///     return ...;
-///   case _:
-///     return null;
-/// }
-/// ```
 
 @optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String id,  String image,  String name,  double price,  double? discountPrice,  String? discountValue)?  $default,) {final _that = this;
 switch (_that) {
