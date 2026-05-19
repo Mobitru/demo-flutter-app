@@ -4,18 +4,11 @@ import 'package:flutter_demo_app/model/product.dart';
 import 'package:flutter_demo_app/repository/products_repository.dart';
 import 'package:injectable/injectable.dart';
 
-enum Sorting {
-  ascendingPrice,
-  descendingPrice,
-  ascendingAZ,
-  descendingAZ,
-}
-
 @injectable
 class ProductsState with ChangeNotifier {
   final ProductsRepository _productsRepository;
 
-  var sorting = Sorting.ascendingPrice;
+  var sorting = SortingType.ascendingPrice;
 
   List<Product> get products => _productsRepository.products;
 
@@ -23,7 +16,7 @@ class ProductsState with ChangeNotifier {
     _productsRepository.products.sort((A, B) => _comparePrice(A, B, sorting.isAsc));
   }
 
-  void applySorting(Sorting sorting) {
+  void applySorting(SortingType sorting) {
     this.sorting = sorting;
     products.sort(sorting.isPrice
         ? (A, B) => _comparePrice(A, B, sorting.isAsc)
@@ -37,7 +30,7 @@ class ProductsState with ChangeNotifier {
       isAsc ? A.name.compareTo(B.name) : B.name.compareTo(A.name);
 
   void logout() {
-    sorting = Sorting.ascendingPrice;
+    sorting = SortingType.ascendingPrice;
     notifyListeners();
   }
 }

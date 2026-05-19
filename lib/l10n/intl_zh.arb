@@ -1,0 +1,262 @@
+{
+  "appTitle": "Mobitru",
+  "@appTitle": {
+    "description": "The application title"
+  },
+  "cartLabel": "购物车",
+  "@cartLabel": {
+    "description": "Label for the cart label"
+  },
+  "myCartLabel": "我的车",
+  "@myCartLabel": {
+    "description": "Label for my cart view"
+  },
+  "generalLabel": "基本信息",
+  "@generalLabel": {
+    "description": "General tab label"
+  },
+  "myAccountLabel": "我的账户",
+  "@myAccountLabel": {
+    "description": "My account label"
+  },
+  "editAccountLabel": "编辑帐户",
+  "@editAccountLabel": {
+    "description": "Label for editing account"
+  },
+  "mobilePhonesLabel": "手机类别",
+  "@mobilePhonesLabel": {
+    "description": "Label for mobile phones section"
+  },
+  "sortingLabel": "排序依据",
+  "@sortingLabel": {
+    "description": "Label for sort by button"
+  },
+  "priceLabel": "价钱",
+  "@priceLabel": {
+    "description": "Label for price sorting option"
+  },
+  "azLabel": "A-Z",
+  "@azLabel": {
+    "description": "Label for sorting alphabetically option"
+  },
+  "editAccountDescription": "请提供您的帐户详细信息",
+  "@editAccountDescription": {
+    "description": "Description for editing account"
+  },
+  "editAddressDescription": "请填写您的地址信息以继续",
+  "@editAddressDescription": {
+    "description": "Description for editing address"
+  },
+  "firstNameTextFieldTitle": "姓名",
+  "@firstNameTextFieldTitle": {
+    "description": "Title for first name text field"
+  },
+  "lastNameTextFieldTitle": "姓氏",
+  "@lastNameTextFieldTitle": {
+    "description": "Title for last name text field"
+  },
+  "emailTextFieldTitle": "电子邮件",
+  "@emailTextFieldTitle": {
+    "description": "Title for email text field"
+  },
+  "addressTextFieldTitle": "地址线",
+  "@addressTextFieldTitle": {
+    "description": "Title for address text field"
+  },
+  "aboutButtonTitle": "关于应用程序",
+  "@aboutButtonTitle": {
+    "description": "Title for about button"
+  },
+  "aboutPageTitle": "关于应用程序",
+  "@aboutPageTitle": {
+    "description": "Title for about page"
+  },
+  "loginTextFieldTitle": "登录",
+  "@loginTextFieldTitle": {
+    "description": "Title for login text field"
+  },
+  "loginButtonTitle": "登录",
+  "@loginButtonTitle": {
+    "description": "Title for login button"
+  },
+  "typeCredsAndLoginButtonTitle": "以正确的用户登录",
+  "@typeCredsAndLoginButtonTitle": {
+    "description": "Title for sign in with correct user button"
+  },
+  "logoutButtonTitle": "注销",
+  "@logoutButtonTitle": {
+    "description": "Title for logout button"
+  },
+  "applyButtonTitle": "申请",
+  "@applyButtonTitle": {
+    "description": "Title for apply button"
+  },
+  "saveButtonTitle": "保存变更",
+  "@saveButtonTitle": {
+    "description": "Title for save button"
+  },
+  "reviewOrderButtonTitle": "审核订单",
+  "@reviewOrderButtonTitle": {
+    "description": "Title for review order button"
+  },
+  "addToCartButtonTitle": "添加到购物车",
+  "@addToCartButtonTitle": {
+    "description": "Title for add to cart button"
+  },
+  "addedToCartButtonTitle": "已添加到购物车",
+  "@addedToCartButtonTitle": {
+    "description": "Title for added to cart button"
+  },
+  "viewProductsButtonTitle": "查看产品",
+  "@viewProductsButtonTitle": {
+    "description": "Title for view products button"
+  },
+  "applyPromoCodeButtonTitle": "应用促销代码",
+  "@applyPromoCodeButtonTitle": {
+    "description": "Title for apply promo code button"
+  },
+  "continueToCheckoutButtonTitle": "继续结账",
+  "@continueToCheckoutButtonTitle": {
+    "description": "Title for continue to checkout button"
+  },
+  "biometricButtonTitle": "生物识别认证",
+  "@biometricButtonTitle": {
+    "description": "Title for biometric authentication button"
+  },
+  "crashButtonTitle": "崩溃应用",
+  "@crashButtonTitle": {
+    "description": "Button to crash the app (for testing)"
+  },
+  "goBackButtonTitle": "返回产品页面",
+  "@goBackButtonTitle": {
+    "description": "Title for go back to products button"
+  },
+  "passwordTextFieldTitle": "密码",
+  "@passwordTextFieldTitle": {
+    "description": "Title for password text field"
+  },
+  "loginDescriptionText": "使用您的生物识别凭据登录 ",
+  "@loginDescriptionText": {
+    "description": "Description for login options"
+  },
+  "loginErrorMessage": "不正确的电子邮件或密码",
+  "@loginErrorMessage": {
+    "description": "Error message for invalid login"
+  },
+  "loginBiometricTip": "请验证以登录",
+  "@loginBiometricTip": {
+    "description": "Tip for biometric authentication"
+  },
+  "cartIsEmptyLabel": "购物车是空的",
+  "@cartIsEmptyLabel": {
+    "description": "Label for empty cart screen"
+  },
+  "cartIsEmptyLabelDetails1": "没有产品",
+  "@cartIsEmptyLabelDetails1": {
+    "description": "Label for empty cart screen after submitting an order"
+  },
+  "cartIsEmptyLabelDetails2": "尚未添加",
+  "@cartIsEmptyLabelDetails2": {
+    "description": "Second detail when cart is empty"
+  },
+  "discountAppliedLabel": " 实用的 ",
+  "@discountAppliedLabel": {
+    "description": "Label for applied discount"
+  },
+  "orderLabel": "订单项目 #",
+  "@orderLabel": {
+    "description": "Prefix for order number label"
+  },
+  "completedLabel": "已完成",
+  "@completedLabel": {
+    "description": "Label for completed status"
+  },
+  "inProgressLabel": "进行中",
+  "@inProgressLabel": {
+    "description": "Label for in progress status"
+  },
+  "contactDetailsLabel": "详细联系方式",
+  "@contactDetailsLabel": {
+    "description": "Label for contact details"
+  },
+  "paymentDetailsLabel": "付款详情",
+  "@paymentDetailsLabel": {
+    "description": "Label for payment details"
+  },
+  "quantityLabel": "数量:",
+  "@quantityLabel": {
+    "description": "Prefix for quantity label"
+  },
+  "packagingFeeLabel": "包装费",
+  "@packagingFeeLabel": {
+    "description": "Label for packaging fee"
+  },
+  "subtotalLabel": "小计",
+  "@subtotalLabel": {
+    "description": "Label for subtotal"
+  },
+  "deliveryFeeLabel": "派送费",
+  "@deliveryFeeLabel": {
+    "description": "Label for delivery fee"
+  },
+  "discountLabel": "折扣",
+  "@discountLabel": {
+    "description": "Label for discount"
+  },
+  "totalLabel": "总价",
+  "@totalLabel": {
+    "description": "Label for total"
+  },
+  "reviewOrderLabel": "审核订单",
+  "@reviewOrderLabel": {
+    "description": "Label for review order"
+  },
+  "confirmOrderLabel": "确认并下订单",
+  "@confirmOrderLabel": {
+    "description": "Label for confirm and place order button"
+  },
+  "successLabel": "订单已成功下单. 请检查您的电子邮件.",
+  "@successLabel": {
+    "description": "Label for successful order"
+  },
+  "provideAddressLabel": "填写地址",
+  "@provideAddressLabel": {
+    "description": "Label for provide address"
+  },
+  "orderCompletedLabel": "订单已完成",
+  "@orderCompletedLabel": {
+    "description": "Label for order completed screen"
+  },
+  "bottomNavigationHome": "主屏幕",
+  "@bottomNavigationHome": {
+    "description": "Bottom navigation label for Home"
+  },
+  "bottomNavigationOrders": "订单屏幕",
+  "@bottomNavigationOrders": {
+    "description": "Bottom navigation label for Orders"
+  },
+  "bottomNavigationAccount": "帐户屏幕",
+  "@bottomNavigationAccount": {
+    "description": "Bottom navigation label for Account"
+  },
+  "fieldEmptyError": "字段不能为空",
+  "@fieldEmptyError": {
+    "description": "Error message for empty field"
+  },
+  "sortPriceAscending": "价格升序排序",
+  "@sortPriceAscending": {
+    "description": "Sort price ascending label"
+  },
+  "sortPriceDescending": "价格降序排列",
+  "@sortPriceDescending": {
+    "description": "Sort price descending label"
+  },
+  "sortNameAZ": "名称升序排列",
+  "@sortNameAZ": {
+    "description": "Sort produce name ascending label"
+  },
+  "sortNameZA": "名称降序排序",
+  "@sortNameZA": {
+    "description": "Sort produce name descending label"
+  }
+}

@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_demo_app/consts/maps.dart';
 import 'package:flutter_demo_app/consts/sizes.dart';
 import 'package:flutter_demo_app/consts/strings.dart';
+import 'package:flutter_demo_app/l10n/app_localizations.dart';
 import 'package:flutter_demo_app/model/product.dart';
 import 'package:flutter_demo_app/presentation/products/product_card.dart';
 import 'package:flutter_demo_app/presentation/products/sorting_icon.dart';
-import 'package:flutter_demo_app/state/products_state.dart';
 import 'package:flutter_demo_app/types.dart';
 import 'package:go_router/go_router.dart';
 
 class ProductsPage extends StatelessWidget {
   final List<Product> products;
-  final Sorting sorting;
+  final SortingType sorting;
   final ValueChanged<MapEntry<Product, int>> add;
   final IsValueChanged<Product> check;
 
@@ -31,12 +31,12 @@ class ProductsPage extends StatelessWidget {
             const EdgeInsets.symmetric(horizontal: primaryPadding, vertical: primaryPadding / 2),
         child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
           Text(
-            '$mobilePhonesLabel (${products.length})',
+            '${AppLocalizations.of(context)!.mobilePhonesLabel} (${products.length})',
             semanticsLabel: 'category',
             style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w600, height: 1.3),
           ),
           Semantics(
-            label: sortingMap[sorting],
+            label: sorting.localizedName(context),
             excludeSemantics: true,
             child: InkWell(
               onTap: () => context.go('/$appNavigationSort'),

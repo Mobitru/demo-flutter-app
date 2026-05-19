@@ -3,14 +3,13 @@ import 'package:flutter_demo_app/consts/accessibility.dart';
 import 'package:flutter_demo_app/consts/colors.dart';
 import 'package:flutter_demo_app/consts/maps.dart';
 import 'package:flutter_demo_app/consts/sizes.dart';
-import 'package:flutter_demo_app/consts/strings.dart';
+import 'package:flutter_demo_app/l10n/app_localizations.dart';
 import 'package:flutter_demo_app/presentation/common/app_bar.dart';
 import 'package:flutter_demo_app/presentation/common/button_widget.dart';
-import 'package:flutter_demo_app/state/products_state.dart';
 
 class SortingWidget extends StatefulWidget {
-  final Sorting sorting;
-  final ValueChanged<Sorting> update;
+  final SortingType sorting;
+  final ValueChanged<SortingType> update;
 
   const SortingWidget({
     required this.sorting,
@@ -23,7 +22,7 @@ class SortingWidget extends StatefulWidget {
 }
 
 class SortingState extends State<SortingWidget> {
-  late Sorting _sorting;
+  late SortingType _sorting;
 
   @override
   void initState() {
@@ -37,7 +36,7 @@ class SortingState extends State<SortingWidget> {
       builder: (_, orientation) => SafeArea(
         child: SafeArea(
           child: Scaffold(
-            appBar: getAppBar(context, sortingLabel),
+            appBar: getAppBar(context, AppLocalizations.of(context)!.sortingLabel),
             body: Padding(
               padding: const EdgeInsets.symmetric(
                 horizontal: primaryPadding,
@@ -50,17 +49,17 @@ class SortingState extends State<SortingWidget> {
                         physics: const NeverScrollableScrollPhysics(),
                         children: ListTile.divideTiles(
                           context: context,
-                          tiles: sortingMap.keys.map(
+                          tiles: SortingType.values.map(
                             (key) => InkWell(
                               onTap: () => setState(() {
                                 _sorting = key;
                               }),
                               child: Semantics(
                                 excludeSemantics: true,
-                                label: '$accessibilitySortingOption ${sortingMap[key]!}',
+                                label: '$accessibilitySortingOption ${key.localizedName(context)}',
                                 child: ListTile(
                                   title: Text(
-                                    sortingMap[key]!,
+                                    key.localizedName(context),
                                     style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                                           height: 1.2,
                                           fontWeight: FontWeight.w300,
@@ -91,7 +90,7 @@ class SortingState extends State<SortingWidget> {
                             ?.copyWith(height: 1.5, color: Colors.white),
                         size: const Size(double.infinity, primaryPadding * 3),
                         callback: () => widget.update(_sorting),
-                        title: applyButtonTitle,
+                        title: AppLocalizations.of(context)!.applyButtonTitle,
                       ),
                     ),
                   )

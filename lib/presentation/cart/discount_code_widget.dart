@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_demo_app/consts/colors.dart';
 import 'package:flutter_demo_app/consts/sizes.dart';
-import 'package:flutter_demo_app/consts/strings.dart';
+import 'package:flutter_demo_app/l10n/app_localizations.dart';
 
 class DiscountCodeWidget extends StatelessWidget {
   final VoidCallback remove;
@@ -26,7 +26,7 @@ class DiscountCodeWidget extends StatelessWidget {
               child: SizedBox(
                 width: MediaQuery.of(context).size.width - (primaryPadding * 2 + 36),
                 child: Text(
-                  '$discountCode $discountAppliedLabel',
+                  '$discountCode ${AppLocalizations.of(context)!.discountAppliedLabel}',
                   overflow: TextOverflow.ellipsis,
                   style: Theme.of(context)
                       .textTheme

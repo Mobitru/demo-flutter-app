@@ -8,7 +8,7 @@ part 'order.freezed.dart';
 part 'order.g.dart';
 
 @freezed
-class ProductOrder with _$ProductOrder {
+abstract class ProductOrder with _$ProductOrder {
   const factory ProductOrder({
     required final String id,
     required List<ProductInfo> products,

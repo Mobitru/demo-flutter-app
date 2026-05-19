@@ -1,8 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_demo_app/consts/colors.dart';
 import 'package:flutter_demo_app/consts/maps.dart';
-import 'package:flutter_demo_app/consts/strings.dart';
-import 'package:flutter_demo_app/state/products_state.dart';
+import 'package:flutter_demo_app/l10n/app_localizations.dart';
 
 class SortingIcon extends StatelessWidget {
   const SortingIcon({
@@ -10,7 +9,7 @@ class SortingIcon extends StatelessWidget {
     required this.sorting,
   });
 
-  final Sorting sorting;
+  final SortingType sorting;
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +19,7 @@ class SortingIcon extends StatelessWidget {
         color: sortingColor,
       ),
       Text(
-        sorting.isPrice ? priceLabel : azLabel,
+        sorting.isPrice ? AppLocalizations.of(context)!.priceLabel : AppLocalizations.of(context)!.azLabel,
         style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w300, color: sortingColor),
       )
     ]);

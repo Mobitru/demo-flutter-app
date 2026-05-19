@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_demo_app/consts/colors.dart';
 import 'package:flutter_demo_app/consts/sizes.dart';
 import 'package:flutter_demo_app/consts/strings.dart';
+import 'package:flutter_demo_app/l10n/app_localizations.dart';
 import 'package:flutter_demo_app/presentation/account/account_page.dart';
 import 'package:flutter_demo_app/presentation/common/cart_widget.dart';
 import 'package:flutter_demo_app/presentation/common/logo_widget.dart';
@@ -45,7 +46,7 @@ class HomePageState extends State<HomePage> {
                   ? const LogoWidget()
                   : Center(
                       child: Text(
-                        myAccountLabel,
+                        AppLocalizations.of(context)!.myAccountLabel,
                         style: Theme.of(context)
                             .textTheme
                             .bodyLarge
@@ -95,11 +96,11 @@ class HomePageState extends State<HomePage> {
                 _navigationState = index;
               }),
               backgroundColor: Colors.white,
-              items: const [
-                BottomNavigationBarItem(icon: Icon(Icons.home), label: bottomNavigationHome),
-                BottomNavigationBarItem(icon: Icon(Icons.list), label: bottomNavigationOrders),
+              items: [
+                BottomNavigationBarItem(icon: Icon(Icons.home), label: AppLocalizations.of(context)!.bottomNavigationHome),
+                BottomNavigationBarItem(icon: Icon(Icons.list), label: AppLocalizations.of(context)!.bottomNavigationOrders),
                 BottomNavigationBarItem(
-                    icon: Icon(Icons.account_box_outlined), label: bottomNavigationAccount),
+                    icon: Icon(Icons.account_box_outlined), label: AppLocalizations.of(context)!.bottomNavigationAccount),
               ],
             ),
           ),

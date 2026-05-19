@@ -1,0 +1,262 @@
+{
+  "appTitle": "Mobitru",
+  "@appTitle": {
+    "description": "The application title"
+  },
+  "cartLabel": "Einkaufswagen",
+  "@cartLabel": {
+    "description": "Label for the cart label"
+  },
+  "myCartLabel": "Mein Warenkorb",
+  "@myCartLabel": {
+    "description": "Label for my cart view"
+  },
+  "generalLabel": "Allgemeine",
+  "@generalLabel": {
+    "description": "General tab label"
+  },
+  "myAccountLabel": "Mein Konto",
+  "@myAccountLabel": {
+    "description": "My account label"
+  },
+  "editAccountLabel": "Konto bearbeiten",
+  "@editAccountLabel": {
+    "description": "Label for editing account"
+  },
+  "mobilePhonesLabel": "Mobiltelefone",
+  "@mobilePhonesLabel": {
+    "description": "Label for mobile phones section"
+  },
+  "sortingLabel": "Sortiere nach",
+  "@sortingLabel": {
+    "description": "Label for sort by button"
+  },
+  "priceLabel": "Preis",
+  "@priceLabel": {
+    "description": "Label for price sorting option"
+  },
+  "azLabel": "A-Z",
+  "@azLabel": {
+    "description": "Label for sorting alphabetically option"
+  },
+  "editAccountDescription": "Bitte geben Sie Ihre Kontodaten an",
+  "@editAccountDescription": {
+    "description": "Description for editing account"
+  },
+  "editAddressDescription": "Adresse angeben, um fortzufahren",
+  "@editAddressDescription": {
+    "description": "Description for editing address"
+  },
+  "firstNameTextFieldTitle": "Vorname",
+  "@firstNameTextFieldTitle": {
+    "description": "Title for first name text field"
+  },
+  "lastNameTextFieldTitle": "Nachname",
+  "@lastNameTextFieldTitle": {
+    "description": "Title for last name text field"
+  },
+  "emailTextFieldTitle": "Email",
+  "@emailTextFieldTitle": {
+    "description": "Title for email text field"
+  },
+  "addressTextFieldTitle": "Adresse",
+  "@addressTextFieldTitle": {
+    "description": "Title for address text field"
+  },
+  "aboutButtonTitle": "Über die App",
+  "@aboutButtonTitle": {
+    "description": "Title for about button"
+  },
+  "aboutPageTitle": "Über die App",
+  "@aboutPageTitle": {
+    "description": "Title for about page"
+  },
+  "loginTextFieldTitle": "Einloggen",
+  "@loginTextFieldTitle": {
+    "description": "Title for login text field"
+  },
+  "loginButtonTitle": "Anmelden",
+  "@loginButtonTitle": {
+    "description": "Title for login button"
+  },
+  "typeCredsAndLoginButtonTitle": "Mit richtigen Daten anmelden",
+  "@typeCredsAndLoginButtonTitle": {
+    "description": "Title for sign in with correct user button"
+  },
+  "logoutButtonTitle": "Ausloggen",
+  "@logoutButtonTitle": {
+    "description": "Title for logout button"
+  },
+  "applyButtonTitle": "Anwenden",
+  "@applyButtonTitle": {
+    "description": "Title for apply button"
+  },
+  "saveButtonTitle": "Speichern",
+  "@saveButtonTitle": {
+    "description": "Title for save button"
+  },
+  "reviewOrderButtonTitle": "Überprüfen Sie die Bestellung",
+  "@reviewOrderButtonTitle": {
+    "description": "Title for review order button"
+  },
+  "addToCartButtonTitle": "In den Warenkorb",
+  "@addToCartButtonTitle": {
+    "description": "Title for add to cart button"
+  },
+  "addedToCartButtonTitle": "Hinzugefügt",
+  "@addedToCartButtonTitle": {
+    "description": "Title for added to cart button"
+  },
+  "viewProductsButtonTitle": "Produkte",
+  "@viewProductsButtonTitle": {
+    "description": "Title for view products button"
+  },
+  "applyPromoCodeButtonTitle": "Promo-Code anwenden",
+  "@applyPromoCodeButtonTitle": {
+    "description": "Title for apply promo code button"
+  },
+  "continueToCheckoutButtonTitle": "Weiter zur Kasse",
+  "@continueToCheckoutButtonTitle": {
+    "description": "Title for continue to checkout button"
+  },
+  "biometricButtonTitle": "Biometrische Authentifizierung",
+  "@biometricButtonTitle": {
+    "description": "Title for biometric authentication button"
+  },
+  "crashButtonTitle": "Crash app",
+  "@crashButtonTitle": {
+    "description": "Button to crash the app (for testing)"
+  },
+  "goBackButtonTitle": "Gehen Sie zurück zu den Produkten",
+  "@goBackButtonTitle": {
+    "description": "Title for go back to products button"
+  },
+  "passwordTextFieldTitle": "Kontopasswort",
+  "@passwordTextFieldTitle": {
+    "description": "Title for password text field"
+  },
+  "loginDescriptionText": "Verwenden Sie Ihr einzigartiges Login und Passwort oder nutzen Sie einfach die biometrische Authentifizierung. ",
+  "@loginDescriptionText": {
+    "description": "Description for login options"
+  },
+  "loginErrorMessage": "Falsche E-Mail-Adresse oder falsches Passwort",
+  "@loginErrorMessage": {
+    "description": "Error message for invalid login"
+  },
+  "loginBiometricTip": "Zum Anmelden authentifizieren!",
+  "@loginBiometricTip": {
+    "description": "Tip for biometric authentication"
+  },
+  "cartIsEmptyLabel": "Einkaufswagen ist leer",
+  "@cartIsEmptyLabel": {
+    "description": "Label for empty cart screen"
+  },
+  "cartIsEmptyLabelDetails1": "Es wurden noch keine Produkte ",
+  "@cartIsEmptyLabelDetails1": {
+    "description": "Label for empty cart screen after submitting an order"
+  },
+  "cartIsEmptyLabelDetails2": "hinzugefügt",
+  "@cartIsEmptyLabelDetails2": {
+    "description": "Second detail when cart is empty"
+  },
+  "discountAppliedLabel": " angewandt",
+  "@discountAppliedLabel": {
+    "description": "Label for applied discount"
+  },
+  "orderLabel": "Bestellen #",
+  "@orderLabel": {
+    "description": "Prefix for order number label"
+  },
+  "completedLabel": "Abgeschlossen",
+  "@completedLabel": {
+    "description": "Label for completed status"
+  },
+  "inProgressLabel": "In Bearbeitung",
+  "@inProgressLabel": {
+    "description": "Label for in progress status"
+  },
+  "contactDetailsLabel": "Kontaktdetails",
+  "@contactDetailsLabel": {
+    "description": "Label for contact details"
+  },
+  "paymentDetailsLabel": "Zahlungsdetails",
+  "@paymentDetailsLabel": {
+    "description": "Label for payment details"
+  },
+  "quantityLabel": "Menge:",
+  "@quantityLabel": {
+    "description": "Prefix for quantity label"
+  },
+  "packagingFeeLabel": "Verpackungsgebühr",
+  "@packagingFeeLabel": {
+    "description": "Label for packaging fee"
+  },
+  "subtotalLabel": "Zwischensumme",
+  "@subtotalLabel": {
+    "description": "Label for subtotal"
+  },
+  "deliveryFeeLabel": "Liefergebühr",
+  "@deliveryFeeLabel": {
+    "description": "Label for delivery fee"
+  },
+  "discountLabel": "Rabatt",
+  "@discountLabel": {
+    "description": "Label for discount"
+  },
+  "totalLabel": "Gesamtsumme",
+  "@totalLabel": {
+    "description": "Label for total"
+  },
+  "reviewOrderLabel": "Überprüfen Sie die Bestellung",
+  "@reviewOrderLabel": {
+    "description": "Label for review order"
+  },
+  "confirmOrderLabel": "Bestätigen und Bestellung aufgeben",
+  "@confirmOrderLabel": {
+    "description": "Label for confirm and place order button"
+  },
+  "successLabel": "Bestellung erfolgreich aufgegeben. Bitte überprüfen Sie Ihre E-Mails.",
+  "@successLabel": {
+    "description": "Label for successful order"
+  },
+  "provideAddressLabel": "Adresse angeben, um fortzufahren",
+  "@provideAddressLabel": {
+    "description": "Label for provide address"
+  },
+  "orderCompletedLabel": "Bestellung abgeschlossen",
+  "@orderCompletedLabel": {
+    "description": "Label for order completed screen"
+  },
+  "bottomNavigationHome": "Startbild",
+  "@bottomNavigationHome": {
+    "description": "Bottom navigation label for Home"
+  },
+  "bottomNavigationOrders": "Bestellungen",
+  "@bottomNavigationOrders": {
+    "description": "Bottom navigation label for Orders"
+  },
+  "bottomNavigationAccount": "Konto",
+  "@bottomNavigationAccount": {
+    "description": "Bottom navigation label for Account"
+  },
+  "fieldEmptyError": "Feld darf nicht leer sein",
+  "@fieldEmptyError": {
+    "description": "Error message for empty field"
+  },
+  "sortPriceAscending": "Preis steigend",
+  "@sortPriceAscending": {
+    "description": "Sort price ascending label"
+  },
+  "sortPriceDescending": "Preis fallend",
+  "@sortPriceDescending": {
+    "description": "Sort price descending label"
+  },
+  "sortNameAZ": "Produktname A-Z",
+  "@sortNameAZ": {
+    "description": "Sort produce name ascending label"
+  },
+  "sortNameZA": "Produktname Z-A",
+  "@sortNameZA": {
+    "description": "Sort produce name descending label"
+  }
+}

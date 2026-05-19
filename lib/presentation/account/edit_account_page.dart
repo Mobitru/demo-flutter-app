@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo_app/consts/strings.dart';
+import 'package:flutter_demo_app/l10n/app_localizations.dart';
 import 'package:flutter_demo_app/presentation/account/edit_account_widget.dart';
 import 'package:flutter_demo_app/presentation/common/app_bar.dart';
 import 'package:flutter_demo_app/state/auth_state.dart';
@@ -20,7 +20,7 @@ class EditAccountState extends State<EditAccountPage> {
     return Consumer<AuthState>(builder: (context, authState, child) {
       return SafeArea(
         child: Scaffold(
-          appBar: getAppBar(context, editAccountLabel),
+          appBar: getAppBar(context, AppLocalizations.of(context)!.editAccountLabel),
           body: EditAccountWidget(
             user: authState.currentUser!,
             callback: authState.updateCurrentUser,

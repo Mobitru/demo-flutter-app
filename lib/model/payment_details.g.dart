@@ -6,8 +6,8 @@ part of 'payment_details.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PaymentDetails _$$_PaymentDetailsFromJson(Map<String, dynamic> json) =>
-    _$_PaymentDetails(
+_PaymentDetails _$PaymentDetailsFromJson(Map<String, dynamic> json) =>
+    _PaymentDetails(
       packagingFee: (json['packagingFee'] as num).toDouble(),
       subtotal: (json['subtotal'] as num).toDouble(),
       deliveryFee: (json['deliveryFee'] as num).toDouble(),
@@ -15,7 +15,7 @@ _$_PaymentDetails _$$_PaymentDetailsFromJson(Map<String, dynamic> json) =>
       total: (json['total'] as num).toDouble(),
     );
 
-Map<String, dynamic> _$$_PaymentDetailsToJson(_$_PaymentDetails instance) =>
+Map<String, dynamic> _$PaymentDetailsToJson(_PaymentDetails instance) =>
     <String, dynamic>{
       'packagingFee': instance.packagingFee,
       'subtotal': instance.subtotal,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo_app/consts/sizes.dart';
-import 'package:flutter_demo_app/consts/strings.dart';
+import 'package:flutter_demo_app/l10n/app_localizations.dart';
 import 'package:flutter_demo_app/model/payment_details.dart';
 
 class PaymentDetailsWidget extends StatelessWidget {
@@ -24,7 +24,7 @@ class PaymentDetailsWidget extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              packagingFeeLabel,
+              AppLocalizations.of(context)!.packagingFeeLabel,
               style: smallStyle,
             ),
             Text(
@@ -38,7 +38,7 @@ class PaymentDetailsWidget extends StatelessWidget {
         ),
         Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
           Text(
-            subtotalLabel,
+            AppLocalizations.of(context)!.subtotalLabel,
             style: boldStyle,
           ),
           Text(
@@ -51,7 +51,7 @@ class PaymentDetailsWidget extends StatelessWidget {
         ),
         Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
           Text(
-            deliveryFeeLabel,
+            AppLocalizations.of(context)!.deliveryFeeLabel,
             style: smallStyle,
           ),
           Text(
@@ -64,7 +64,7 @@ class PaymentDetailsWidget extends StatelessWidget {
         ),
         Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
           Text(
-            discountLabel,
+            AppLocalizations.of(context)!.discountLabel,
             style: smallStyle,
           ),
           Text(
@@ -75,7 +75,7 @@ class PaymentDetailsWidget extends StatelessWidget {
         const Divider(),
         Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
           Text(
-            totalLabel,
+            AppLocalizations.of(context)!.totalLabel,
             style: boldStyle,
           ),
           Text(

@@ -6,7 +6,7 @@ part 'product_info.freezed.dart';
 part 'product_info.g.dart';
 
 @freezed
-class ProductInfo with _$ProductInfo {
+abstract class ProductInfo with _$ProductInfo {
   const factory ProductInfo({
     required final Product product,
     required final int quantity,

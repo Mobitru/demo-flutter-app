@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo_app/consts/assets.dart';
 import 'package:flutter_demo_app/consts/sizes.dart';
-import 'package:flutter_demo_app/consts/strings.dart';
+import 'package:flutter_demo_app/l10n/app_localizations.dart';
 import 'package:flutter_demo_app/model/product_info.dart';
 import 'package:flutter_demo_app/presentation/products/price_widget.dart';
 
@@ -64,7 +64,7 @@ class ProductInfoWidget extends StatelessWidget {
                         style: Theme.of(context).textTheme.bodySmall,
                       ),
                     ),
-                  Text('$quantityLabel${info.quantity}',
+                  Text('${AppLocalizations.of(context)!.quantityLabel}${info.quantity}',
                       style: Theme.of(context)
                           .textTheme
                           .bodyMedium

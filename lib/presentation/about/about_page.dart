@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_demo_app/consts/strings.dart';
 import 'package:flutter_demo_app/presentation/common/app_bar.dart';
 import 'package:webview_flutter/webview_flutter.dart';
+import 'package:flutter_demo_app/l10n/app_localizations.dart';
 
 class AboutPage extends StatefulWidget {
   const AboutPage({super.key});
@@ -25,7 +26,7 @@ class AboutPageState extends State<AboutPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: getAppBar(context, aboutPageTitle),
+      appBar: getAppBar(context, AppLocalizations.of(context)!.aboutPageTitle),
       body: WebViewWidget(
         controller: _webViewController,
       ),

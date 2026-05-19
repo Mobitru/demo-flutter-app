@@ -29,8 +29,8 @@ class AuthState with ChangeNotifier {
     }
   }
 
-  void checkBioAuth() {
-    _bioAuth.authenticate().then((value) {
+  void checkBioAuth(BuildContext context) {
+    _bioAuth.authenticate(context).then((value) {
       if (value) {
         _usersRepository.checkBioCredentials();
       }

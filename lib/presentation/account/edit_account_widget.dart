@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo_app/consts/colors.dart';
 import 'package:flutter_demo_app/consts/sizes.dart';
-import 'package:flutter_demo_app/consts/strings.dart';
+import 'package:flutter_demo_app/l10n/app_localizations.dart';
 import 'package:flutter_demo_app/model/user.dart';
 import 'package:flutter_demo_app/presentation/common/bottom_widget.dart';
 import 'package:flutter_demo_app/presentation/common/button_widget.dart';
@@ -54,7 +54,9 @@ class EditAccountState extends State<EditAccountWidget> {
             child: Column(
               children: [
                 Text(
-                  widget.addressCheck ? editAddressDescription : editAccountDescription,
+                  widget.addressCheck
+                  ? AppLocalizations.of(context)!.editAddressDescription
+                  : AppLocalizations.of(context)!.editAccountDescription,
                   textAlign: TextAlign.left,
                   style: Theme.of(context)
                       .textTheme
@@ -65,22 +67,22 @@ class EditAccountState extends State<EditAccountWidget> {
                   height: primaryPadding,
                 ),
                 InputWidget(
-                  firstNameTextFieldTitle,
+                  AppLocalizations.of(context)!.firstNameTextFieldTitle,
                   controller: firstNameTextController,
                   error: isFirstNameEmpty,
                 ),
                 InputWidget(
-                  lastNameTextFieldTitle,
+                  AppLocalizations.of(context)!.lastNameTextFieldTitle,
                   controller: lastNameTextController,
                   error: isLastNameEmpty,
                 ),
                 InputWidget(
-                  emailTextFieldTitle,
+                  AppLocalizations.of(context)!.emailTextFieldTitle,
                   readOnly: true,
                   controller: emailTextController,
                 ),
                 InputWidget(
-                  addressTextFieldTitle,
+                  AppLocalizations.of(context)!.addressTextFieldTitle,
                   controller: addressTextController,
                   error: isAddressEmpty,
                 ),
@@ -91,7 +93,7 @@ class EditAccountState extends State<EditAccountWidget> {
                       size: const Size(double.infinity, primaryPadding * 3),
                       color: primaryColor,
                       style: Theme.of(context).textTheme.titleMedium?.copyWith(color: Colors.white),
-                      title: widget.addressCheck ? reviewOrderButtonTitle : saveButtonTitle,
+                      title: widget.addressCheck ? AppLocalizations.of(context)!.reviewOrderButtonTitle : AppLocalizations.of(context)!.saveButtonTitle,
                       padding: const EdgeInsets.symmetric(vertical: primaryPadding),
                       callback: () {
                         isAddressEmpty = addressTextController.text.isEmpty;

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo_app/consts/sizes.dart';
-import 'package:flutter_demo_app/consts/strings.dart';
+import 'package:flutter_demo_app/l10n/app_localizations.dart';
 import 'package:flutter_demo_app/model/order.dart';
 import 'package:flutter_demo_app/presentation/orders/order_element_widget.dart';
 
@@ -22,7 +22,7 @@ class CurrentOrderWidget extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.only(left: primaryPadding, top: primaryPadding),
               child: Text(
-                '$inProgressLabel (1)',
+                '${AppLocalizations.of(context)!.inProgressLabel} (1)',
                 style: Theme.of(context).textTheme.titleMedium?.copyWith(height: 1.3),
               ),
             ),

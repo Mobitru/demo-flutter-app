@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo_app/consts/colors.dart';
 import 'package:flutter_demo_app/consts/sizes.dart';
-import 'package:flutter_demo_app/consts/strings.dart';
+import 'package:flutter_demo_app/l10n/app_localizations.dart';
 import 'package:flutter_demo_app/presentation/common/button_widget.dart';
 import 'package:go_router/go_router.dart';
 
@@ -29,7 +29,7 @@ class SuccessOrderWidget extends StatelessWidget {
               SizedBox(
                 width: 320,
                 child: Text(
-                  successLabel,
+                  AppLocalizations.of(context)!.successLabel,
                   textAlign: TextAlign.center,
                   maxLines: 2,
                   style: Theme.of(context)
@@ -48,7 +48,7 @@ class SuccessOrderWidget extends StatelessWidget {
             callback: () {
               context.go('/');
             },
-            title: goBackButtonTitle,
+            title: AppLocalizations.of(context)!.goBackButtonTitle,
             color: primaryColor,
             style:
                 Theme.of(context).textTheme.titleMedium?.copyWith(color: Colors.white, height: 1.5),

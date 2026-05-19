@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo_app/consts/colors.dart';
 import 'package:flutter_demo_app/consts/sizes.dart';
-import 'package:flutter_demo_app/consts/strings.dart';
+import 'package:flutter_demo_app/l10n/app_localizations.dart';
 import 'package:flutter_demo_app/model/product.dart';
 import 'package:flutter_demo_app/presentation/cart/cart_element_widget.dart';
 import 'package:flutter_demo_app/presentation/cart/discount_code_widget.dart';
@@ -42,7 +42,7 @@ class CartWidget extends StatelessWidget {
                         },
                       ),
                     ),
-                    title: applyPromoCodeButtonTitle,
+                    title: AppLocalizations.of(context)!.applyPromoCodeButtonTitle,
                     color: Colors.white,
                     style: Theme.of(context)
                         .textTheme
@@ -74,7 +74,7 @@ class CartWidget extends StatelessWidget {
           child: ButtonWidget(
             size: Size(MediaQuery.of(context).size.width - primaryPadding * 2, primaryPadding * 3),
             callback: processOrder,
-            title: continueToCheckoutButtonTitle,
+            title: AppLocalizations.of(context)!.continueToCheckoutButtonTitle,
             color: primaryColor,
             style:
                 Theme.of(context).textTheme.titleMedium?.copyWith(color: Colors.white, height: 1.5),

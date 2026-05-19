@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo_app/consts/colors.dart';
 import 'package:flutter_demo_app/consts/sizes.dart';
-import 'package:flutter_demo_app/consts/strings.dart';
+import 'package:flutter_demo_app/l10n/app_localizations.dart';
 import 'package:flutter_demo_app/model/order.dart';
 
 class OrderElementWidget extends StatelessWidget {
@@ -33,7 +33,7 @@ class OrderElementWidget extends StatelessWidget {
                   ),
                 ),
                 child: Text(
-                  inProgressLabel,
+                  AppLocalizations.of(context)!.inProgressLabel,
                   style: Theme.of(context)
                       .textTheme
                       .bodySmall
@@ -47,7 +47,7 @@ class OrderElementWidget extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              '$orderLabel${order.id}',
+              '${AppLocalizations.of(context)!.orderLabel}${order.id}',
               style: Theme.of(context)
                   .textTheme
                   .titleMedium

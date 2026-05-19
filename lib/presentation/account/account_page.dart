@@ -7,6 +7,7 @@ import 'package:flutter_demo_app/presentation/account/user_widget.dart';
 import 'package:flutter_demo_app/presentation/common/bottom_widget.dart';
 import 'package:flutter_demo_app/presentation/common/button_widget.dart';
 import 'package:go_router/go_router.dart';
+import 'package:flutter_demo_app/l10n/app_localizations.dart';
 
 class AccountPage extends StatelessWidget {
   final User? user;
@@ -46,7 +47,7 @@ class AccountPage extends StatelessWidget {
               padding: const EdgeInsets.only(
                   left: primaryPadding, top: primaryPadding, bottom: primaryPadding / 2),
               child: Text(
-                generalLabel,
+                AppLocalizations.of(context)!.generalLabel,
                 style: Theme.of(context).textTheme.titleMedium,
               )),
           InkWell(
@@ -55,7 +56,7 @@ class AccountPage extends StatelessWidget {
               padding: const EdgeInsets.only(
                   left: primaryPadding, top: primaryPadding, bottom: primaryPadding),
               child: Text(
-                aboutButtonTitle,
+                AppLocalizations.of(context)!.aboutButtonTitle,
                 style:
                     Theme.of(context).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w300),
               ),
@@ -66,7 +67,7 @@ class AccountPage extends StatelessWidget {
               child: ButtonWidget(
                 padding: const EdgeInsets.all(primaryPadding),
                 size: const Size(double.infinity, primaryPadding * 3),
-                title: logoutButtonTitle,
+                title: AppLocalizations.of(context)!.logoutButtonTitle,
                 color: logoutButtonColor,
                 style: Theme.of(context).textTheme.titleMedium?.copyWith(color: Colors.white),
                 callback: logout,

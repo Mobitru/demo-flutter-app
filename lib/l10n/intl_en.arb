@@ -1,0 +1,263 @@
+{
+  "appTitle": "Mobitru",
+  "@appTitle": {
+    "description": "The application title"
+  },
+  "cartLabel": "Cart",
+  "@cartLabel": {
+    "description": "Label for the cart label"
+  },
+  "myCartLabel": "My cart",
+  "@myCartLabel": {
+    "description": "Label for my cart view"
+  },
+  "generalLabel": "General",
+  "@generalLabel": {
+    "description": "General tab label"
+  },
+  "myAccountLabel": "My account",
+  "@myAccountLabel": {
+    "description": "My account label"
+  },
+  "editAccountLabel": "Edit account",
+  "@editAccountLabel": {
+    "description": "Label for editing account"
+  },
+  "mobilePhonesLabel": "Mobile phones",
+  "@mobilePhonesLabel": {
+    "description": "Label for mobile phones section"
+  },
+  "sortingLabel": "Sort by",
+  "@sortingLabel": {
+    "description": "Label for sort by button"
+  },
+  "priceLabel": "Price",
+  "@priceLabel": {
+    "description": "Label for price sorting option"
+  },
+  "azLabel": "A-Z",
+  "@azLabel": {
+    "description": "Label for sorting alphabetically option"
+  },
+  "editAccountDescription": "Please provide your account details",
+  "@editAccountDescription": {
+    "description": "Description for editing account"
+  },
+  "editAddressDescription": "Please provide your address details to proceed",
+  "@editAddressDescription": {
+    "description": "Description for editing address"
+  },
+  "firstNameTextFieldTitle": "First name",
+  "@firstNameTextFieldTitle": {
+    "description": "Title for first name text field"
+  },
+  "lastNameTextFieldTitle": "Last name",
+  "@lastNameTextFieldTitle": {
+    "description": "Title for last name text field"
+  },
+  "emailTextFieldTitle": "Email",
+  "@emailTextFieldTitle": {
+    "description": "Title for email text field"
+  },
+  "addressTextFieldTitle": "Address",
+  "@addressTextFieldTitle": {
+    "description": "Title for address text field"
+  },
+  "aboutButtonTitle": "About the app",
+  "@aboutButtonTitle": {
+    "description": "Title for about button"
+  },
+  "aboutPageTitle": "About the app",
+  "@aboutPageTitle": {
+    "description": "Title for about page"
+  },
+  "loginTextFieldTitle": "Login",
+  "@loginTextFieldTitle": {
+    "description": "Title for login text field"
+  },
+  "loginButtonTitle": "Sign In",
+  "@loginButtonTitle": {
+    "description": "Title for login button"
+  },
+  "typeCredsAndLoginButtonTitle": "Sign in with correct user",
+  "@typeCredsAndLoginButtonTitle": {
+    "description": "Title for sign in with correct user button"
+  },
+  "logoutButtonTitle": "Logout",
+  "@logoutButtonTitle": {
+    "description": "Title for logout button"
+  },
+  "applyButtonTitle": "Apply",
+  "@applyButtonTitle": {
+    "description": "Title for apply button"
+  },
+  "saveButtonTitle": "Save",
+  "@saveButtonTitle": {
+    "description": "Title for save button"
+  },
+  "reviewOrderButtonTitle": "Review order",
+  "@reviewOrderButtonTitle": {
+    "description": "Title for review order button"
+  },
+  "addToCartButtonTitle": "Add to cart",
+  "@addToCartButtonTitle": {
+    "description": "Title for add to cart button"
+  },
+  "addedToCartButtonTitle": "Added to cart",
+  "@addedToCartButtonTitle": {
+    "description": "Title for added to cart button"
+  },
+  "viewProductsButtonTitle": "View products",
+  "@viewProductsButtonTitle": {
+    "description": "Title for view products button"
+  },
+  "applyPromoCodeButtonTitle": "Apply promo code",
+  "@applyPromoCodeButtonTitle": {
+    "description": "Title for apply promo code button"
+  },
+  "continueToCheckoutButtonTitle": "Continue to checkout",
+  "@continueToCheckoutButtonTitle": {
+    "description": "Title for continue to checkout button"
+  },
+  "biometricButtonTitle": "Biometric authentication",
+  "@biometricButtonTitle": {
+    "description": "Title for biometric authentication button"
+  },
+  "crashButtonTitle": "Crash app",
+  "@crashButtonTitle": {
+    "description": "Button to crash the app (for testing)"
+  },
+  "goBackButtonTitle": "Go back to products",
+  "@goBackButtonTitle": {
+    "description": "Title for go back to products button"
+  },
+  "passwordTextFieldTitle": "Password",
+  "@passwordTextFieldTitle": {
+    "description": "Title for password text field"
+  },
+  "loginDescriptionText": "Log in using your biometric credential ",
+  "@loginDescriptionText": {
+    "description": "Description for login options"
+  },
+  "loginErrorMessage": "Invalid email or password",
+  "@loginErrorMessage": {
+    "description": "Error message for invalid login"
+  },
+  "loginBiometricTip": "Please authenticate to show account balance",
+  "@loginBiometricTip": {
+    "description": "Tip for biometric authentication"
+  },
+  "cartIsEmptyLabel": "Cart is empty",
+  "@cartIsEmptyLabel": {
+    "description": "Label for empty cart screen"
+  },
+  "cartIsEmptyLabelDetails1": "There are no products",
+  "@cartIsEmptyLabelDetails1": {
+    "description": "Label for empty cart screen after submitting an order"
+  },
+  "cartIsEmptyLabelDetails2": "added yet",
+  "@cartIsEmptyLabelDetails2": {
+    "description": "Second detail when cart is empty"
+  },
+  "discountAppliedLabel": " applied",
+  "@discountAppliedLabel": {
+    "description": "Label for applied discount"
+  },
+  "orderLabel": "Order #",
+  "@orderLabel": {
+    "description": "Prefix for order number label"
+  },
+  "completedLabel": "Completed",
+  "@completedLabel": {
+    "description": "Label for completed status"
+  },
+  "inProgressLabel": "In progress",
+  "@inProgressLabel": {
+    "description": "Label for in progress status"
+  },
+  "contactDetailsLabel": "Contact details",
+  "@contactDetailsLabel": {
+    "description": "Label for contact details"
+  },
+  "paymentDetailsLabel": "Payment details",
+  "@paymentDetailsLabel": {
+    "description": "Label for payment details"
+  },
+  "quantityLabel": "Qty:",
+  "@quantityLabel": {
+    "description": "Prefix for quantity label"
+  },
+  "packagingFeeLabel": "Packaging fee",
+  "@packagingFeeLabel": {
+    "description": "Label for packaging fee"
+  },
+  "subtotalLabel": "Subtotal",
+  "@subtotalLabel": {
+    "description": "Label for subtotal"
+  },
+  "deliveryFeeLabel": "Delivery fee",
+  "@deliveryFeeLabel": {
+    "description": "Label for delivery fee"
+  },
+  "discountLabel": "Discount",
+  "@discountLabel": {
+    "description": "Label for discount"
+  },
+  "totalLabel": "Total",
+  "@totalLabel": {
+    "description": "Label for total"
+  },
+  "reviewOrderLabel": "Review order",
+  "@reviewOrderLabel": {
+    "description": "Label for review order"
+  },
+  "confirmOrderLabel": "Confirm & place order",
+  "@confirmOrderLabel": {
+    "description": "Label for confirm and place order button"
+  },
+  "successLabel": "Order successfully placed. Please check you email.",
+  "@successLabel": {
+    "description": "Label for successful order"
+  },
+  "provideAddressLabel": "Provide address",
+  "@provideAddressLabel": {
+    "description": "Label for provide address"
+  },
+  "orderCompletedLabel": "Order completed",
+  "@orderCompletedLabel": {
+    "description": "Label for order completed screen"
+  },
+  "bottomNavigationHome": "Home",
+  "@bottomNavigationHome": {
+    "description": "Bottom navigation label for Home"
+  },
+  "bottomNavigationOrders": "Orders",
+  "@bottomNavigationOrders": {
+    "description": "Bottom navigation label for Orders"
+  },
+  "bottomNavigationAccount": "Account",
+  "@bottomNavigationAccount": {
+    "description": "Bottom navigation label for Account"
+  },
+  "fieldEmptyError": "Field can't be empty",
+  "@fieldEmptyError": {
+    "description": "Error message for empty field"
+  },
+  "sortPriceAscending": "Price ascending",
+  "@sortPriceAscending": {
+    "description": "Sort price ascending label"
+  },
+  "sortPriceDescending": "Price descending",
+  "@sortPriceDescending": {
+    "description": "Sort price descending label"
+  },
+  "sortNameAZ": "Product name A-Z",
+  "@sortNameAZ": {
+    "description": "Sort produce name ascending label"
+  },
+  "sortNameZA": "Product name Z-A",
+  "@sortNameZA": {
+    "description": "Sort produce name descending label"
+  }
+
+}

@@ -4,7 +4,7 @@ import 'package:flutter_demo_app/consts/accessibility.dart';
 import 'package:flutter_demo_app/consts/assets.dart';
 import 'package:flutter_demo_app/consts/colors.dart';
 import 'package:flutter_demo_app/consts/sizes.dart';
-import 'package:flutter_demo_app/consts/strings.dart';
+import 'package:flutter_demo_app/l10n/app_localizations.dart';
 import 'package:flutter_demo_app/consts/values.dart';
 import 'package:flutter_demo_app/model/product.dart';
 import 'package:flutter_demo_app/presentation/common/button_widget.dart';
@@ -78,7 +78,7 @@ class ProductCard extends StatelessWidget {
                 child: ButtonWidget(
                   size: Size(constrains.maxWidth - primaryPadding * 2, primaryPadding * 2),
                   callback: onTap,
-                  title: isBooked ? addedToCartButtonTitle : addToCartButtonTitle,
+                  title: isBooked ? AppLocalizations.of(context)!.addedToCartButtonTitle : AppLocalizations.of(context)!.addToCartButtonTitle,
                   color: isBooked ? Colors.white : primaryColor,
                   style: TextStyle(
                       color: isBooked ? Colors.black : Colors.white,
